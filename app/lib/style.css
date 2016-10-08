@@ -1,0 +1,444 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px Helvetica, Arial, sans-serif;
+  background: url("../img/T--SYSU-CHINA--background.png") fixed;
+  background-size: 100% 100%;
+}
+
+.back-to-top {
+	position: fixed !important;
+	right: 14px;
+	bottom: 10px;
+	background-color: rgb(177, 221, 251) !important;
+}
+
+#navBar a:not(.brand-logo) {
+  color: white !important;
+}
+
+#navBar a:visited, #navBar a:focus, #navBar a:hover {
+	text-decoration: none;
+}
+
+#navBar u, #navBar a:not(.brand-logo), #navBar {
+	-webkit-transition:all .3s ease;
+	transition:all .3s ease;
+	-webkit-transform:translateZ(0);
+	transform:translateZ(0); 
+}
+
+#navBar u {
+	text-decoration: none;
+}
+
+#navBar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 800;
+	padding-left: 50px;
+}
+
+.unscrolled {
+	background-color: black;
+	/*height: 50px;*/
+}
+
+.scrolled {
+	background-color: rgba(0,0,0, 0.6) !important;
+}
+
+#navBar .brand-logo {
+	line-height: 0;
+}
+
+#navBar .brand-logo img {
+	width: 110px;
+	height: 60px;
+	top: 0;
+}
+
+#navBar a:hover{
+	color: rgb(242, 135, 82) !important;
+}
+
+#navBar a:hover u, .u-click {
+	border-top: 5px solid rgb(242, 135, 82);
+	padding-top: 10px;
+}
+
+#navBar .navBlock {
+	text-align: center !important;
+	background-color: transparent !important;
+}
+
+#navBar .navMobile {
+	margin: 0 15% 0 0;
+	list-style-image: none;
+    line-height: 64px;
+}
+
+#navBar .navMobile ul {
+	margin: 0 !important;
+	list-style-image: none !important;
+
+}
+
+#navBar .navMobile li {
+	margin: 0;
+}
+
+.dropdown-content {
+	width: auto !important;
+	top: auto !important;
+	background-color: black !important;
+}
+
+.dropdown-content li a {
+	color: white !important;
+}
+
+.dropdown-content li:hover {
+	background-color: black !important;
+}
+
+
+.content {
+	width: 100%;
+	margin-top: 10%;
+	text-align: center;
+	display: block;
+}
+
+/*Overview*/
+
+#main-content {
+	width: 100%;
+	margin-top: 10%;
+	text-align: center;
+	display: block;
+	/*clear: both;*/
+}
+
+#cells-content {
+/*	background: url("../img/T--SYSU-CHINA--clock-bg.png") no-repeat fixed;
+	background-size: 15%;
+	background-position: 50% 54%;*/
+	width: 100%;
+	height: 400px;
+	margin-top: 10%;
+	text-align: center;
+}
+
+
+@keyframes pointerRotate {
+	0%, 100% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes pointerRotate {
+	0%, 100% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes pointerRotate {
+	0%, 100% { -moz-transform: rotate(0deg); }
+	100% { -moz-transform: rotate(360deg); }
+}
+
+@-ms-keyframes pointerRotate {
+	0%, 100% { -ms-transform: rotate(0deg); }
+	100% { -ms-transform: rotate(360deg); }
+}
+
+@-o-keyframes pointerRotate {
+	0%, 100% { -o-transform: rotate(0deg); }
+	100% { -o-transform: rotate(360deg); }
+}
+
+#clock {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: url("../img/T--SYSU-CHINA--clock-bg.png") no-repeat;
+	background-size: 100%;
+	background-position: center;
+	margin-top: 8%;
+	left: 43%;
+}
+
+#cells-content #clock-pointer {
+	margin-top: 10%;
+	max-width: 110px;
+	max-height: 110px;	
+}
+
+.clock-move {
+	transform-origin: 50% 86px;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	animation: pointerRotate 4s infinite linear running;
+	-webkit-animation: pointerRotate 4s infinite linear running;
+	-moz-animation: pointerRotate 4s infinite linear running;
+	-ms-animation: pointerRotate 4s infinite linear running;
+}
+
+#cells-content .cell-resize {
+	position: absolute;
+	max-width: 140px;
+	max-height: 140px;
+}
+
+#cells-content .cell-gray {
+	margin-top: 10%;
+}
+
+#cells-content .gray-left {
+	left: 32%;
+}
+
+#cells-content .gray-right {
+	right: 31%;
+}
+
+#cells-content .cell-target {
+	opacity: 1 !important;
+}
+
+#cells-content .cell-red {
+	margin-top: 10.8%;
+	opacity: 0;
+	transition: all 4s;
+	-webkit-transition: all 4s;
+	-moz-transition: all 4s;
+	z-index: 2;
+}
+
+#cells-content .cell-red-left-target-1 {
+	margin-top: 6% !important;
+	left: 23% !important;
+}
+
+#cells-content .cell-red-left-target-2 {
+	margin-top: 15.6% !important;
+	left: 23% !important;
+}
+
+#cells-content .red-left {
+	left: 31.7%;
+}
+
+#cells-content .cell-red-right-target-1 {
+	margin-top: 6% !important;
+	right: 22.5% !important;
+}
+
+#cells-content .cell-red-right-target-2 {
+	margin-top: 15.6% !important;
+	right: 22.5% !important;
+}
+
+#cells-content .red-right {
+	right: 31.2%;
+}
+
+#cells-content .cell-blue {
+	opacity: 0;
+	transition: all 4s;
+	-webkit-transition: all 4s;
+	-moz-transition: all 4s;
+	z-index: 3;
+}
+
+#cells-content .cell-blue:nth-child(1), .cell-blue:nth-child(2) {
+	margin-top: 5%;
+	left: 23.5%;
+}
+
+#cells-content .cell-blue:nth-child(3), .cell-blue:nth-child(4) {
+	margin-top: 14.6%;
+	left: 23.5%;
+}
+
+#cells-content .cell-blue:nth-child(12), .cell-blue:nth-child(13) {
+	margin-top: 5%;
+	right: 22.5%;
+}
+
+#cells-content .cell-blue:nth-child(14), .cell-blue:nth-child(15) {
+	margin-top: 14.6%;
+	right: 22.5%;
+}
+
+#cells-content .cell-blue-left-target-1 {
+	margin-top: -1% !important;
+	left: 16% !important;
+}
+
+#cells-content .cell-blue-left-target-2 {
+	margin-top: 6% !important;
+	left: 10% !important;
+}
+
+#cells-content .cell-blue-left-target-3 {
+	margin-top: 15% !important;
+	left: 10% !important;
+}
+
+#cells-content .cell-blue-left-target-4 {
+	margin-top: 22% !important;
+	left: 16% !important;
+}
+
+#cells-content .cell-blue-right-target-1 {
+	margin-top: -1% !important;
+	right: 15% !important;
+}
+
+#cells-content .cell-blue-right-target-2 {
+	margin-top: 6% !important;
+	right: 9% !important;
+}
+
+#cells-content .cell-blue-right-target-3 {
+	margin-top: 15% !important;
+	right: 9% !important;
+}
+
+#cells-content .cell-blue-right-target-4 {
+	margin-top: 22% !important;
+	right: 15% !important;
+}
+
+#main-content p {
+	margin: 0;
+	font-size: 26pt; 
+	font-weight: bold;
+	text-align:center;
+}
+
+
+
+/*Medal Requirments*/
+
+/*#medal-requirements {
+	margin-top: 20%;
+}*/
+
+#medal-intro {
+	padding: 10px 60px 0 60px;
+	text-align: left;
+}
+
+.sub-title {
+	font-weight: bold;
+	font-size: 22pt;
+}
+
+#medal-intro .req-detail {
+	padding: 0 10px 0 10px;
+}
+
+#medal-intro .req-detail p {
+	font-size: 16pt;
+	margin: 10px;
+}
+
+#medal-intro .req-detail img {
+	max-width: 38px;
+	max-height: 38px;
+	vertical-align: middle;
+	/*float: left;*/
+}
+
+#medal-intro .req-detail ul {
+	padding: 0 10px 0 60px;
+	margin: 0;
+}
+
+#medal-intro .req-detail ul li {
+	margin-bottom: 8px;
+	font-size: 12pt;
+}
+
+#medal-intro li {
+	list-style: none;
+}
+
+#medal-intro .req-detail .font-orange {
+	color: orange;
+	text-decoration: none;
+}
+
+
+/*Safety*/
+
+#safety-detail {
+	padding: 10px 40px 20px 60px;
+	text-align: left;
+}
+
+#safety-detail .sub-title {
+	font-weight: bold;
+	font-size: 22pt;
+	margin-bottom: 25px;
+}
+
+#safety-detail .detail p {
+	/*margin-left: 50px;*/
+	padding: 0 60px 0 60px;
+	font-weight: normal;
+	/*margin-top: 0;*/
+	font-size: 14pt;
+}
+
+
+/*Interlab*/
+
+#interlab {
+
+}
+
+.content .content-detail {
+	padding: 5px 10% 0 10%;
+}
+
+.content .content-detail p {
+	text-align:left !important;
+	font-size: 16pt !important;
+}
+
+.content hr {
+	border: none;
+	height: 3px;
+	border-top: 3px solid;
+}
+
+.content .content-detail img {
+	max-width: 90%;
+}
+
+.content .content-detail .figure {
+	font-size: 12pt !important;
+	padding: 0 50px 0 50px;
+	font-weight: lighter;
+	text-align: center !important;
+}
+
+.content .content-detail .font-orange {
+	color: orange;
+	text-decoration: none;
+}
+
+
+
+/*overview*/
+
+#overview {
+
+}
+
+

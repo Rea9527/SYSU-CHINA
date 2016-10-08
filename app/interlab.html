@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iGemApp</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="lib/style.css">
+	<link rel="stylesheet" type="text/css" href="lib/animate.css">
+	<link rel="stylesheet" type="text/css" href="lib/materialize/css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="lib/material-icons.css">
+</head>
+<body>
+	<nav id="navBar" class="unscrolled">
+		<div class="nav-wrapper nav">
+			<a href="#!" class="brand-logo"><img src="img/T--SYSU-CHINA--sysu-china.png" /></a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down navMobile">
+				<li>
+					<ul id="dropdown_project" class="dropdown-content">
+						<li><a href="#!">Overview</a></li>
+						<li><a href="#!">Background</a></li>
+						<li><a href="#!">Cyclebow target</a></li>
+						<li><a href="#!">Cyclebow design</a></li>
+					</ul>
+					<a class="dropdown-button blue navBlock" href="#!" data-activates="dropdown_project"><u>Project</u></a>
+				</li>
+				<li>
+					<ul id="dropdown_results" class="dropdown-content">
+						<li><a href="#!">Circuit construction</a></li>
+						<li><a href="#!">Cyclebow construction</a></li>
+						<li><a href="#!">Parts </a></li>
+					</ul>
+					<a class="dropdown-button blue navBlock" href="#!" data-activates="dropdown_results"><u>Results</u></a>
+				</li>
+				<li>
+					<ul id="dropdown_notebook" class="dropdown-content">
+						<li><a href="#!">Notes</a></li>
+						<li><a href="#!">Protocols and methods</a></li>
+						<li><a href="#!">References</a></li>
+					</ul>
+					<a class="dropdown-button blue navBlock" href="#!" data-activates="dropdown_notebook"><u>Notebook</u></a>
+				</li>
+				<li>
+					<ul id="dropdown_modeling" class="dropdown-content">
+						<li><a href="#!">Model target</a></li>
+						<li><a href="#!">Model design</a></li>
+						<li><a href="#!">Model</a></li>
+					</ul>
+					<a class="dropdown-button blue navBlock" href="#!" data-activates="dropdown_modeling"><u>Modeling</u></a>
+				</li>
+				<li>
+					<ul id="dropdown_hp" class="dropdown-content">
+						<li><a href="#!">CCIC</a></li>
+						<li><a href="#!">Collaboration</a></li>
+					</ul>
+					<a class="dropdown-button blue navBlock" href="#!" data-activates="dropdown_hp"><u>Human Practice</u></a>
+				</li>
+				<li>
+					<a class="blue navBlock" href="#/interlab"><u>Interlab</u></a>
+				</li>
+				<li>
+					<ul id="dropdown_judging" class="dropdown-content">
+						<li><a href="#!">Medal requirements</a></li>
+						<li><a href="#!">Safety</a></li>
+					</ul>
+					<a class="dropdown-button blue navBlock" href="#!" data-activates="dropdown_judging"><u>Judging</u></a>
+				</li>
+				<li>
+					<ul id="dropdown_team" class="dropdown-content">
+						<li><a href="#!">Team members</a></li>
+						<li><a href="#!">Attribution</a></li>
+					</ul>
+					<a class="dropdown-button blue navBlock" href="#!" data-activates="dropdown_team"><u>Team</u></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div id="interlab" class="content">
+		<h2>Interlab</h2>
+		<div id="interlab-detail content-detail">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This year, three devices consisting of a constitutive promoter with low (J23117), medium (J23106) and high (J23101) promoter strengths expressing GFP (E0040) as reporter needed to be measured. Two more devices with negative (I20270) and positive  (R0040)  control part were used as references. These devices along  with FITC and LUDOX for calibration and measurement were sent by  the  iGEM officials. </p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fluorescence  was  measured  from overnight  cultures using  Plate  Reader  BioTek® Synergy  H1  to  compare  three  promoter  strength  respectively . All  raw  data  is  provided  below  which  can  be download as EXCEL.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In  order  to  compare  the three  different promoters mentioned  above,  a  histogram  showing  the fluorescence intensity at 509nm (figure 1) was formed.</p>
+			<hr>
+			<img src="./img/interlab/数据1.png">
+			<p class="figure">Figure 1. Histogram of fluorescence intensity at 509 nm  of different  devices, comparing the  reporter  GFP  intensity after J23101 (device 1), J23106 (device 2) and J23117 (device 3) promoters. Ex: excitation, Em: emission</p>
+			<hr>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In correspondence to the requirements of the measurement protocol,the figure 1 above  was shown with all the data subtracted from the blank. (Raw data is available in the Notebook site)</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It  could  be  seen  from the  result  that  the control group (both  positive  and  negative)  showed  a normal expression of GFP. Device 1 had the most powerful  promoter (J23101) but  the re sult showed that it only had a rather low expression  of GFP. Device 3 (J23117) had an expression of GFP that was 1.1 times more than the negative control had,  which was 17 times lower than the  positive control. The expression of Device 2 (J23106) was 1.2 times higher than the positive control.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As the results was not as expected, we analyzed the growth of the cells (figure 2).</p>
+			<hr>
+			<img src="./img/interlab/数据2.png">
+			<p class="figure">Figure 2. Line chart of cells’ intensity at 600 nm of different devices, comparing the cell concentration.</p>
+			<hr>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure 2 showed that  cells  with device 1 grew  slower  than  other  groups. Therefore  different growth  pattern  would  affect  the  overall  detected  expression  of GFP, resulting  in  the  unexpected phenomenon. So it  is  better  to compare the level of expression in  a  different  way. As suggested by iGEM, we  used  the data Fl (fluorescence) / Abs600 to  create  an average fluorescence of cells in the medium (figure 3).</p>
+			<hr>
+			<img src="./img/interlab/数据3.png">
+			<p class="figure">Figure 3. Histogram of FL/Abs600 in different devices, comparing the average fluorescence of each device.</p>
+			<hr>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The figure 3 showed  that  the level  of expression  in device 1 was nearly as strong as device  2 by comparing the  Fl/Abs. The result  also revealed that the  average  fluorescence was decreasing when the increase of cells number. Overall, the results  suggested that  device 1 was not  working as well as expected.</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From all the figures we found that the standard deviation was quite large, some data recorded were even below zero. As the incubator is shared by all colleagues in the lab, and was occasionally stopped and  opened  by  others,  the  incubating  temperature  was  inconstant.  This  might  affect  our E.coli’s growth and expression in some degree, explaining the large standard deviation.</p>
+			<hr>
+			<img src="./img/interlab/结果.png">
+			<p class="figure">Figure 4. Post-laboratory Things. Two  beautiful  fluorescence  picture was  showed under the blue light. The left one showed the fluorescence of FITC standard gradient. The right one showed the  panic of our team members  worrying about the deadline to submit data.</p>
+			<hr>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We not only gained experience but also pleasure.</p>
+		</div>
+	</div>
+	<a href="javascript:scroll(0,0)" class="btn btn-floating waves-effect back-to-top btn-large"><i class="medium material-icons">vertical_align_top</i></a>
+
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="lib/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/materialize/js/materialize.js"></script>
+</body>
+</html>
